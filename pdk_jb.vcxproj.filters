@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gameRoom.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="gameTable.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="gamedb.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="evTimer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="gameServer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jsonPacket.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="classAward.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Cardlib\card_analysis.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Cardlib\card_find.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Cardlib\card_statistics.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Cardlib\cardHelper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Cardlib\deck.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Cardlib\hole_cards.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\FunctionTTL.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\logfile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Database\database.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Database\redis_io.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gameTable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="jsonPacket.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="proto.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="classAward.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="evTimer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gamedb.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gameRoom.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gameServer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="headers.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cardlib\card.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cardlib\card_analysis.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cardlib\card_find.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cardlib\card_statistics.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cardlib\card_type.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cardlib\cardHelper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cardlib\deck.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cardlib\hole_cards.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\FunctionTTL.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\logfile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\multpleThread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\objPool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Database\database.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Database\redis_io.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\base64\Base64.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libevwork\ClientConn.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libevwork\ConnManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libevwork\EVComm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libevwork\EVWork.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libevwork\ExceptionErrno.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libevwork\FormDef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libevwork\FuncHelper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libevwork\JsonData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libevwork\JsonMFC.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libevwork\JsonPacket.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libevwork\ListenConn.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libevwork\Logger.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libevwork\Writer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libtinyredis\ConsistentHash.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libtinyredis\RedisClient.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libtinyredis\RedisFactory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="config.conf" />
+    <None Include="restart_15.sh" />
+    <None Include="restart_jd.sh" />
+    <None Include="restart_room.sh" />
+    <None Include="Makefile" />
+    <None Include="proc.pid" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="README.txt" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6EFCAE02-0B7B-4235-AC7D-77D716A3D456}</ProjectGuid>
+    <RootNamespace>pdk_jb</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Cardlib\cardHelper.cpp" />
+    <ClCompile Include="Cardlib\card_analysis.cpp" />
+    <ClCompile Include="Cardlib\card_find.cpp" />
+    <ClCompile Include="Cardlib\card_statistics.cpp" />
+    <ClCompile Include="Cardlib\deck.cpp" />
+    <ClCompile Include="Cardlib\hole_cards.cpp" />
+    <ClCompile Include="classAward.cpp" />
+    <ClCompile Include="Common\FunctionTTL.cpp" />
+    <ClCompile Include="Common\logfile.cpp" />
+    <ClCompile Include="Database\database.cpp" />
+    <ClCompile Include="Database\redis_io.cpp" />
+    <ClCompile Include="evTimer.cpp" />
+    <ClCompile Include="gamedb.cpp" />
+    <ClCompile Include="gameRoom.cpp" />
+    <ClCompile Include="gameServer.cpp" />
+    <ClCompile Include="gameTable.cpp" />
+    <ClCompile Include="jsonPacket.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="player.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cardlib\card.h" />
+    <ClInclude Include="Cardlib\cardHelper.h" />
+    <ClInclude Include="Cardlib\card_analysis.h" />
+    <ClInclude Include="Cardlib\card_find.h" />
+    <ClInclude Include="Cardlib\card_statistics.h" />
+    <ClInclude Include="Cardlib\card_type.h" />
+    <ClInclude Include="Cardlib\deck.h" />
+    <ClInclude Include="Cardlib\hole_cards.h" />
+    <ClInclude Include="classAward.h" />
+    <ClInclude Include="Common\FunctionTTL.h" />
+    <ClInclude Include="Common\logfile.h" />
+    <ClInclude Include="Common\multpleThread.h" />
+    <ClInclude Include="Common\objPool.h" />
+    <ClInclude Include="Database\database.h" />
+    <ClInclude Include="Database\redis_io.h" />
+    <ClInclude Include="evTimer.h" />
+    <ClInclude Include="gamedb.h" />
+    <ClInclude Include="gameRoom.h" />
+    <ClInclude Include="gameServer.h" />
+    <ClInclude Include="gameTable.h" />
+    <ClInclude Include="headers.h" />
+    <ClInclude Include="include\base64\Base64.h" />
+    <ClInclude Include="include\libevwork\ClientConn.h" />
+    <ClInclude Include="include\libevwork\ConnManager.h" />
+    <ClInclude Include="include\libevwork\EVComm.h" />
+    <ClInclude Include="include\libevwork\EVWork.h" />
+    <ClInclude Include="include\libevwork\ExceptionErrno.h" />
+    <ClInclude Include="include\libevwork\FormDef.h" />
+    <ClInclude Include="include\libevwork\FuncHelper.h" />
+    <ClInclude Include="include\libevwork\JsonData.h" />
+    <ClInclude Include="include\libevwork\JsonMFC.h" />
+    <ClInclude Include="include\libevwork\JsonPacket.h" />
+    <ClInclude Include="include\libevwork\ListenConn.h" />
+    <ClInclude Include="include\libevwork\Logger.h" />
+    <ClInclude Include="include\libevwork\Writer.h" />
+    <ClInclude Include="include\libtinyredis\ConsistentHash.h" />
+    <ClInclude Include="include\libtinyredis\RedisClient.h" />
+    <ClInclude Include="include\libtinyredis\RedisFactory.h" />
+    <ClInclude Include="jsonPacket.h" />
+    <ClInclude Include="player.h" />
+    <ClInclude Include="proto.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="config.conf" />
+    <None Include="Makefile" />
+    <None Include="proc.pid" />
+    <None Include="restart_15.sh" />
+    <None Include="restart_jd.sh" />
+    <None Include="restart_room.sh" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="README.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

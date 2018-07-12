@@ -1,0 +1,112 @@
+#pragma once
+
+enum system_proto
+{
+	SYSTEM_ECHO = 1,	//系统检测
+	SYSTEM_ONLINE = 2,	//在线人数
+
+
+	SYSTEM_AWARD = 10,
+	SYSTEM_AWARD2 = 11,
+
+    SYSTEM_DAIKAI           = 100,
+    SYSTEM_DAIKAI_DISMISS   = 101,
+    SYSTEM_DAIKAI_RES       = 400,
+    SYSTEM_DAIKAI_DIMISS_RES= 401,
+
+	SYSTEM_MSG_UC = 4002,
+	SYSTEM_MSG_BC = 4001,
+};
+
+enum message_type
+{
+	MSG_MONEY = 1,			//rmb
+	MSG_DIAMOND = 2,		//钻石
+};
+
+enum client_proto
+{
+	SYSTEM_SERVER				= 8001,
+	P_CLIENT_LOGIN_REQ			= 101001,	//进入房间
+	P_CLIENT_LOGOUT_REQ			= 101002,	//退出房间
+	P_CLIENT_READY_REQ			= 101003,	//准备
+	P_CLIENT_BET_REQ			= 101004,	//出牌
+	P_CLIENT_CHAT_REQ			= 101005,	//聊天
+	P_CLIENT_FACE_REQ			= 101006,	//发表情
+	P_CLIENT_SITDOWN_REQ		= 101008,	//请求入座
+	P_CLIENT_CHATMSG_REQ		= 101066,	//语音
+	P_CLIENT_TABLE_INFO_REQ		= 101010,	//获取桌子信息
+
+	P_CLIENT_AUTO_START_REQ		= 101055,	//托管
+	P_CLIENT_AUTO_STOP_REQ		= 101056,	//停止托管
+	
+	P_CLIENT_ROOM_DEL_REQ		= 101100,	//解散房间
+	P_CLIENT_ROOM_DEL_ACK		= 101101,	//解散房间应答
+	P_CLIENT_ROOM_KICKOUT		= 101102,	//踢人
+	P_CLIENT_ROOM_MASTER		= 101103,	//转让房主
+
+	P_CLIENT_RUN_REQ			= 101200,	//逃跑请求
+
+    P_CLIENT_CHANGE_TABLE_REQ	= 1901, //请求换桌子
+	P_CLIENT_RECHARGE_REQ		= 1998,	//充值
+    P_CLIENT_FORWARD			= 1999, //转发
+};
+
+enum server_proto
+{
+	N_SERVER_LOGIN_SUCC_UC			= 104000,	//登录
+	P_SERVER_LOGIN_SUCC_BC			= 104001,	//广播:进入桌子成功
+	P_SERVER_LOGIN_ERR_UC			= 104002,	//进入房间失败
+	P_SERVER_LOGOUT_SUCC_BC			= 104004,	//退出房间广播
+    P_SERVER_SITDOWN_UC				= 104005,   //落座成功反馈
+	N_SERVER_TABLE_INFO_UC			= 104006,	//桌子信息
+	P_SERVER_READY_SUCC_BC			= 104007,	//准备
+	P_SERVER_READY_ERROR_UC			= 104008,	//准备失败返回
+	P_SERVER_GAME_START_BC			= 104009,	//游戏开始
+	P_SERVER_BET_SUCC_BC			= 104011,	//出牌成功
+	P_SERVER_BET_ERR				= 104013,	//出牌失败.
+	N_SERVER_GAME_END_BC			= 104014,	//结算信息
+	N_SERVER_CHAT_BC				= 104016,	//聊天
+	P_SERVER_FACE_BC				= 104017,	//发表情
+	P_SERVER_UPDATE_INFO_BC			= 104020,	//更新玩家基本信息
+	P_SERVER_EMOTION_BC				= 104021,	//大表情广播
+	P_SERVER_GAME_START_UC			= 104026,	//开始发牌
+	P_SERVER_GAME_SINGLECARD		= 104028,	//报单
+	P_SERVER_PLAYER_WIN				= 104029,	//赢家
+	P_SERVER_ROUND_END				= 104030,	//一轮结束
+	P_SEVER_PC_BC					= 104031,	//托管
+	P_SEVER_BOOM_BC					= 104032,	//炸弹
+	P_SEVER_COUNT_CARD				= 104034,	//记牌器
+	P_SERVER_NEXT_BET_BC			= 104035,	//下一个出牌的座位号
+	P_SERVER_MISSION				= 104045,	//任务
+	P_SERVER_CALL					= 104046,	//开始叫先手
+	P_SERVER_CALL_RESULT			= 104049,	//叫先手结果
+	P_SERVER_ROB_RESULT				= 104051,	//抢先手结果
+	P_SERVER_CHATMSG_BC				= 104066,	//语音消息
+	P_SERVER_SYNC_CARDS				= 104100,	//同步手中的牌.
+	P_SERVER_BET_ILLEGAL			= 104101,	//非法牌型
+	P_SERVER_BET_SMALL				= 104102,	//非法出牌,打不起上家的牌
+	P_SERVER_BET_MUSTCALL			= 104103,	//必须出牌,有牌打得起上家的牌
+	P_SERVER_PLAYER_CONNINFO		= 104104,	//玩家在线状态改变
+	P_SERVER_ROOM_DEL_ASK			= 104105,	//询问解散房间.
+	P_SERVER_ROOM_DEL_ACK			= 104106,	//同步解散房间的应答状态.
+	P_SERVER_ROOM_DEL_RET			= 104107,	//房间解散结果
+	P_SERVER_ROOM_MASTER			= 104108,	//转让房主结果
+	P_SERVER_ROOM_MASTER_NOTIFY		= 104109,	//房主变更消息
+	P_SERVER_ROOM_KICK_RET			= 104110,	//踢人
+	P_SERVER_GAME_SCOREINFO			= 104200,	//房间结算信息
+
+	P_SERVER_AUTO_RESULT_UC			= 104055, //托管反馈.
+	P_SERVER_AUTO_ERROR_UC			= 104056, //托管错误.
+
+    P_SERVER_ROOM_MASTER_CHANGE   = 4888,//代开房房主切换
+    P_SERVER_CHANGE_TABLE_ERROR   = 4901,//换桌子失败返回
+	P_SERVER_TIMEOUT_NOTIFY_BC	  = 4902,		// 超时通知
+	P_SERVER_SYNC_MONEY_BC		  = 4998,		// 服务器同步金币
+};
+
+enum poker_play_action
+{
+	ACTION_PLAY = 2001,	//出牌
+	ACTION_PASS = 2005,	//过牌
+};
